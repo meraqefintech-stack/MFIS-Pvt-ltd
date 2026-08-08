@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-900: #0a1128;
+  --color-navy-800: #101c42;
+  --color-navy-700: #16285c;
+  --color-copper-500: #b87333;
+  --color-copper-400: #d49a6a;
+  --color-copper-300: #e6b89c;
+  --color-copper-600: #8c5523;
+}
+
+@layer base {
+  :root {
+    --background: var(--color-navy-900);
+    --foreground: #f8fafc;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.copper-gradient {
+  background: linear-gradient(135deg, var(--color-copper-300) 0%, var(--color-copper-500) 50%, var(--color-copper-600) 100%);
+}
+
+.copper-text-gradient {
+  background: linear-gradient(135deg, var(--color-copper-300) 0%, var(--color-copper-500) 50%, var(--color-copper-600) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-panel {
+  background: rgba(16, 28, 66, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(184, 115, 51, 0.2);
+}
