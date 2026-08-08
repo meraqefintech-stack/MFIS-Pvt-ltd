@@ -1,10 +1,4 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: "export",
-  images: {
-    unoptimized: true,
-  },
+const nextConfig = {
+  output: 'export', // Static HTML export ke liye
 };
-
 export default nextConfig;
